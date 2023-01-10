@@ -47,7 +47,7 @@ The endpoint to retrieve a state and vehicle Records.
 | HttP method |POST                                         |
 |    path     |api/v1/register                              |
 | Http Method |POST                                         |
-|    Path     |api/v1/                                      |                         
+|    Path     |api/v1/transact                                      |                         
 
 
 > These codes are custom to the app and the http status codes are still going to be sent
