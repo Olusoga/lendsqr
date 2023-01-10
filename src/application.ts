@@ -2,7 +2,7 @@ import express from 'express';
 import * as http from 'http';
 import bodyParser from 'body-parser';
 import knex from './databaseConfig/dbConfig';
-
+import UserRoutes from './router/user';
 const app: express.Application = express();
 const server: http.Server = http.createServer(app);
 const port = process.env.PORT || 4040;
@@ -10,6 +10,7 @@ const port = process.env.PORT || 4040;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.json());
+app.use('/api/v1', UserRoutes);
 
 const runningMessage = `Server running on port ${port}`;
 knex.queryBuilder();
