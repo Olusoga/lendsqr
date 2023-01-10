@@ -1,0 +1,18 @@
+{
+    "errorPayload": {
+        "trap": "unhandledRejection",
+        "reason": {
+            "shortMessage": "Command failed with exit code 1: docker-compose -f /Users/angaziz/Work/Scripts/business-banking-ekyb/docker-compose.dockest-generated.yml up --detach mongodb-test",
+            "command": "docker-compose -f /Users/angaziz/Work/Scripts/business-banking-ekyb/docker-compose.dockest-generated.yml up --detach mongodb-test",
+            "exitCode": 1,
+            "stdout": "",
+            "stderr": "Found orphan containers (business-banking-ekyb-mongodb-1) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up.\nCreating business-banking-ekyb_mongodb-test_1 ... \r\nHost is already in use by another container\nCreating business-banking-ekyb_mongodb-test_1 ... error\r\n\nERROR: for business-banking-ekyb_mongodb-test_1  Cannot start service mongodb-test: driver failed programming external connectivity on endpoint business-banking-ekyb_mongodb-test_1 (331ac524bfcc1a8dab6f0a439249e7c568978484507b0f5adf2999118d45dcf1): Bind for 0.0.0.0:27017 failed: port is already allocated\n\nERROR: for mongodb-test  Cannot start service mongodb-test: driver failed programming external connectivity on endpoint business-banking-ekyb_mongodb-test_1 (331ac524bfcc1a8dab6f0a439249e7c568978484507b0f5adf2999118d45dcf1): Bind for 0.0.0.0:27017 failed: port is already allocated\nEncountered errors while bringing up the project.",
+            "failed": true,
+            "timedOut": false,
+            "isCanceled": false,
+            "killed": false
+        },
+        "promise": {}
+    },
+    "timestamp": "2022-04-13T03:36:55.752Z"
+}

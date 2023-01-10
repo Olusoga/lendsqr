@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "lib": ["es6"],
+        "types": ["reflect-metadata", "node", "express"],
+        "allowJs": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "emitDecoratorMetadata": true,
+        "noImplicitAny": true,
+        "outDir": "./dist/",
+        "baseUrl": "./src",
+        "paths": {
+           "*": ["src/node_modules/*", "vendor/*"],
+            "src/*": ["./src/*"],
+            //"@/resources/*":["resources/*"],
+            //"@/utils/*":["utils/*"],
+            //"@/middleware":["middleware/*"],
+        },
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "target": "es6",
+        "typeRoots": ["src/node_modules/@types"]
+    },
+    "exclude": ["clients", "dist"]
+}
